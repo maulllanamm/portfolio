@@ -8,6 +8,78 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Header start-->
+    <header
+      class="absolute top-0 left-0 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#" class="block py-6 text-2xl font-bold text-primary"
+              >MaulanaM</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <!-- nav start -->
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- nav end -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
     <!-- Hero section start -->
     <section id="home" class="pt-36">
       <div class="container">
@@ -15,7 +87,7 @@
           <div
             class="w-full self-center px-4 text-center lg:w-1/2 lg:text-left"
           >
-            <h1 class="mb-1 text-4xl font-bold">Maulana Muhammad</h1>
+            <h1 class="mb-1 text-4xl font-bold text-dark">Maulana Muhammad</h1>
             <h2 class="mb-1">
               I'm <span class="font-semibold text-primary">Web Programmer</span>
             </h2>
@@ -27,7 +99,7 @@
             <div class="mb-8 flex items-center justify-center lg:justify-start">
               <!-- javasctipt -->
               <a href="#" class="mx-3 max-w-[45px]">
-                <img src="dist/img/icon/javasctipt.png" alt="javasctipt" />
+                <img src="dist/img/icon/javascript.png" alt="javasctipt" />
               </a>
               <!-- tailwindcss -->
               <a href="#" class="mx-3 max-w-[45px]">
@@ -75,5 +147,68 @@
       </div>
     </section>
     <!-- Hero section end -->
+
+    <!-- About me start -->
+    <section id="about" class="pt-36">
+      <div class="container">
+        <div class="mb-3 text-center text-3xl font-bold uppercase text-primary">
+          About me
+          <span class="section-line m-auto"></span>
+        </div>
+        <p class="mx-10 mb-7 text-center text-base text-secondary">
+          My name is Maulana Muhammad. I am professional Web Designer and Web
+          Developer. Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever
+        </p>
+        <h2
+          class="mb-3 text-center text-lg font-semibold uppercase text-primary"
+        >
+          Skills
+        </h2>
+        <div class="flex flex-wrap">
+          <div class="flex w-full flex-wrap justify-center px-4">
+            <!-- mongodb -->
+            <a href="#" class="mx-8 my-4 max-w-[80px]">
+              <img src="dist/img/icon/mongodb.png" alt="mongodb" />
+            </a>
+            <!-- express -->
+            <a href="#" class="mx-8 my-4 max-w-[80px]">
+              <img src="dist/img/icon/express.png" alt="express" />
+            </a>
+            <!-- react -->
+            <a href="#" class="mx-8 my-4 max-w-[120px]">
+              <img src="dist/img/icon/react.png" alt="react" />
+            </a>
+            <!-- nodejs -->
+            <a href="#" class="mx-8 my-4 max-w-[80px]">
+              <img src="dist/img/icon/nodejs.png" alt="nodejs" />
+            </a>
+            <!-- bootstrap -->
+            <a href="#" class="mx-8 my-4 max-w-[120px]">
+              <img src="dist/img/icon/bootstrap.png" alt="bootstrap" />
+            </a>
+            <!-- tailwind -->
+            <a href="#" class="mx-8 my-4 max-w-[80px]">
+              <img src="dist/img/icon/tailwindcss.png" alt="tailwind" />
+            </a>
+            <!-- nextjs -->
+            <a href="#" class="mx-8 my-4 max-w-[120px]">
+              <img src="dist/img/icon/nextjs.png" alt="nextjs" />
+            </a>
+            <!-- php -->
+            <a href="#" class="mx-8 my-4 max-w-[120px]">
+              <img src="dist/img/icon/php.png" alt="php" />
+            </a>
+            <!-- ci -->
+            <a href="#" class="mx-8 my-4 max-w-[80px]">
+              <img src="dist/img/icon/ci.png" alt="ci" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About me end -->
   </body>
+  <script src="dist/js/script.js"></script>
 </html>
